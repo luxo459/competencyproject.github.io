@@ -1,0 +1,173 @@
+body {
+	background-color: #99CC33;
+    color: #333366  
+}
+nav {
+    font-weight: bold;
+    padding: 2em;
+    font-size: 150%;
+    float: left;
+    width: 100px;
+}   
+nav a {
+    text-decoration: none;
+    display: block;
+    transition: color 2s, background-color 2s;       
+}
+nav a:link {
+    color: #D3D3D3;
+}
+nav a:visited {
+    color: #344873;
+}
+nav a:hover {
+    color: #99CC33;
+    background-color: #f0f0f0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1em;
+}
+header {
+    background-image: url(images/image1C.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    line-height: 600%;
+    text-indent: 0.5em;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+}   
+header a:link, header a:visited {
+    color: #FF9900;
+}
+header a:hover {
+    color: #99CC33;
+}
+h1 {
+    color: #FF9900;
+    margin-bottom: 0;
+    font-family: Arial, "Times New Roman", serif;
+    text-shadow: 2px 2px 2px #CCFF66;
+}
+footer {
+    font-size: 80%; 
+    font-style: italic;
+    text-align: center;
+    font-family: Arial, "Times New Roman", serif;
+}
+h2 {
+    font-family: Arial, "Times New Roman", serif;
+    color: #333366;
+    background-image: linear-gradient(to bottom, #FF9900, #99CC33);
+}
+p {
+    font-family: Arial, "Times New Roman", serif;
+}
+dl {
+    font-family: Arial, "Times New Roman", serif;
+}
+main {
+    background-color: #D3D3D3;
+    display: block; 
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-left: 150px;
+    overflow: auto;
+}
+#wrapper {
+    background-color: #90C7E3;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 5px 5px 5px #333333;
+    border: 1px solid #000033;
+    background-image: linear-gradient(to bottom, #FF9900, #D3D3D3);
+}
+table {
+    border: 5px solid #99CC33;
+    border-collapse: collapse;
+    background-color: #00CC66;
+}
+table th, table td {
+    border: 5px solid #99CC33;
+    color: #333399;
+    text-align: left;
+    font-family: Arial, "Times New Roman", serif;   
+}
+table th {
+    text-align: center;
+}
+p {
+    color: #006699;
+    font-weight: bold;
+    text-align: justify;
+}
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 150px;
+    padding-right: 5px;
+    color: #006600;
+    font-weight: bold;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+    background-color: #FF9900;
+    font-family: serif;
+    font-weight: bold;
+}
+input[type="submit"] {
+    margin-left: 140px;
+    background-color: #99CCCC;
+    font-weight: bold;
+}
+/* New styles for accordion/dropdown content */
+.accordion-container {
+     width: 100%;
+}
+.accordion-item {
+     border-bottom: 1px solid #333366;
+     margin-bottom: 10px;
+}
+.accordion-header {
+    background-color: #99CC33;
+    color: #333366;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.accordion-header:hover {
+    background-color: #88B822;
+}
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+.accordion-header.active .accordion-icon {
+    transform: rotate(90deg);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 1.5em;
+}
+.accordion-content.active {
+    max-height: 500px; /* Adjust this value as needed to accommodate the content */
+    padding: 1.5em;
+    background-color: #D3D3D3;
+}
+
